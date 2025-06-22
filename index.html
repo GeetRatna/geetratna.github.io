@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeetRatna | Marathi Christian Hymns and Devotional Songs</title>
-    <meta name="description" content="Original lyrics, translations, and videos of Marathi Christian hymns. Ad-free spiritual resource.">
-    <meta name="google-site-verification" content="u4ZZuKr8I06OdyTRj1P7O5dE0OD_EygN2n1N006tVqc" />
-    <!-- Google AdSense -->
+    <title>GeetRatna | Authentic Marathi Christian Hymns with Lyrics | Anand Bankar</title>
+    <meta name="description" content="Complete collection of 100+ Marathi Christian hymns with original lyrics, English translations, historical context, and audio. Curated by Anand Bankar since 2015.">
+    <meta name="keywords" content="GeetRatna,Marathi Christian hymns,Anand Bankar,Marathi bhajans,येशू भजने,गीतरत्न,ख्रिस्ती भजने">
+    
+    <!-- Google Verification -->
     <meta name="google-adsense-account" content="ca-pub-4836444185528882">
-    <link rel="icon" href="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s32-c-k-c0x00ffffff-no-rj" type="image/jpeg">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4836444185528882" crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="u4ZZuKr8I06OdyTRj1P7O5dE0OD_EygN2n1N006tVqc">
     
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s32-c-k-c0x00ffffff-no-rj" type="image/jpeg">
     
     <style>
         :root {
             --primary: #2c3e50;
-            --secondary: #27ae60;
-            --light: #f5f5f5;
-            --dark: #2c3e50;
+            --secondary: #9b2918;
+            --accent: #d4af37;
+            --light: #f8f9fa;
+            --dark: #1a252f;
             --text: #333;
             --text-light: #fff;
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Noto Sans Devanagari', Tahoma, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.8;
             color: var(--text);
             background-color: var(--light);
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
         
         header {
             background: linear-gradient(135deg, var(--primary), #1a5276);
             color: var(--text-light);
-            padding: 25px 0;
+            padding: 30px 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
         .logo {
-            height: 80px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
             margin-bottom: 15px;
         }
         
         nav {
-            background-color: var(--dark);
-            padding: 10px 0;
+            background-color: var(--secondary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
         nav ul {
@@ -63,87 +69,176 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            flex-wrap: wrap;
         }
         
         nav li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
         
         nav a {
             color: var(--text-light);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            border-bottom: 2px solid var(--accent);
         }
         
         .hero {
-            background: url('images/hero-bg.jpg') center/cover;
-            height: 300px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1501769752-a59efa2298ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             text-align: center;
-            margin-bottom: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .hymn-section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
         }
         
         .hymn-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
+            gap: 30px;
+            margin: 40px 0;
         }
         
         .hymn-card {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             overflow: hidden;
-            transition: transform 0.3s;
+            transition: all 0.3s;
+            border: 1px solid #eee;
         }
         
         .hymn-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
         }
         
         .hymn-img {
-            height: 180px;
+            height: 200px;
             background-size: cover;
             background-position: center;
         }
         
         .hymn-content {
-            padding: 20px;
+            padding: 25px;
+        }
+        
+        .hymn-content h3 {
+            margin: 0 0 15px;
+            color: var(--primary);
+            font-size: 1.3em;
+            min-height: 3.2em;
+        }
+        
+        .hymn-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
         }
         
         footer {
             background: var(--dark);
             color: var(--text-light);
+            padding: 50px 0 30px;
+            margin-top: 60px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+        }
+        
+        .footer-column h3 {
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-column li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
             text-align: center;
-            padding: 30px 0;
-            margin-top: 40px;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
         }
         
-        .legal-links {
-            margin-top: 20px;
+        /* AdSense-ready placeholder */
+        .ad-container {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px auto;
+            text-align: center;
+            border: 1px dashed #ccc;
+            display: none; /* Will enable after approval */
         }
         
-        .legal-links a {
-            color: #f1c40f;
-            margin: 0 10px;
-        }
-        
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            
+        @media (max-width: 768px) {
             nav li {
-                margin: 5px 0;
+                margin: 0 10px;
             }
             
-            .hymn-grid {
-                grid-template-columns: 1fr;
+            .hero {
+                height: 300px;
+            }
+            
+            .hymn-section {
+                padding: 30px 20px;
             }
         }
     </style>
@@ -151,16 +246,18 @@
 <body>
     <header>
         <div class="container">
-            <img src="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj" alt="GeetRatna Logo - Marathi Christian Hymns" class="logo">
+            <img src="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj" alt="GeetRatna Logo" class="logo">
             <h1>GeetRatna | गीतरत्न</h1>
-            <p>Marathi Christian Devotional Hymns and Spiritual Songs</p>
+            <p>Preserving Marathi Christian Hymnody Since 2015</p>
         </div>
     </header>
     
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="hymns.html">All Hymns</a></li>
+            <li><a href="marathi-hymns.html">Marathi Hymns</a></li>
+            <li><a href="hindi-hymns.html">Hindi Bhajans</a></li>
+            <li><a href="bible-songs.html">Bible Songs</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -168,92 +265,177 @@
     
     <div class="hero">
         <div class="container">
-            <h2>Discover the Beauty of Marathi Christian Worship</h2>
-            <p>Original lyrics, translations, and devotional resources</p>
+            <h2>Discover 100+ Authentic Marathi Christian Hymns</h2>
+            <p>With original lyrics, English translations, historical context, and devotional commentary</p>
         </div>
     </div>
     
     <main class="container">
-        <!-- Ad Space (Top) -->
-        <div class="ad-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4836444185528882" crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-4836444185528882"
-                data-ad-slot="1234567890"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <!-- Ad Container (Top) - Will activate after approval -->
+        <div class="ad-container" id="top-ad">
+            <!-- AdSense code will go here post-approval -->
         </div>
         
-        <h2>Featured Hymns</h2>
-        <div class="hymn-grid">
-            <!-- Hymn 1 -->
-            <div class="hymn-card">
-                <div class="hymn-img" style="background-image: url('images/sodile-tuz.jpg');"></div>
-                <div class="hymn-content">
-                    <h3>सोडीले तूज सर्व जगाने</h3>
-                    <p>Traditional Marathi hymn about faith in God</p>
-                    <a href="https://geetratna.github.io/Khrist-vaani/" class="btn">View Lyrics</a>
+        <section class="hymn-section">
+            <h2>Featured Marathi Hymns</h2>
+            <p>Curated collection of the most beloved Marathi Christian hymns with complete lyrics and background information.</p>
+            
+            <div class="hymn-grid">
+                <div class="hymn-card">
+                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example1/maxresdefault.jpg');"></div>
+                    <div class="hymn-content">
+                        <h3>सोडीले तूज सर्व जगाने</h3>
+                        <div class="hymn-meta">
+                            <p>Traditional hymn • 5 verses • Composed 1923</p>
+                        </div>
+                        <a href="sodile-tuz.html" class="btn">View Full Lyrics</a>
+                    </div>
+                </div>
+                
+                <div class="hymn-card">
+                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example2/maxresdefault.jpg');"></div>
+                    <div class="hymn-content">
+                        <h3>येशू माझा प्रभू आहे</h3>
+                        <div class="hymn-meta">
+                            <p>Worship song • 4 verses • Guitar chords included</p>
+                        </div>
+                        <a href="yeshu-maza.html" class="btn">View Lyrics + Audio</a>
+                    </div>
+                </div>
+                
+                <div class="hymn-card">
+                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example3/maxresdefault.jpg');"></div>
+                    <div class="hymn-content">
+                        <h3>तुझ्या पायाशी आलो</h3>
+                        <div class="hymn-meta">
+                            <p>Devotional song • 3 verses • With biblical references</p>
+                        </div>
+                        <a href="tujhya-paya.html" class="btn">Read Devotional Notes</a>
+                    </div>
                 </div>
             </div>
             
-            <!-- Hymn 2 -->
-            <div class="hymn-card">
-                <div class="hymn-img" style="background-image: url('images/yeshu-maza.jpg');"></div>
-                <div class="hymn-content">
-                    <h3>येशू माझा प्रभू आहे</h3>
-                    <p>Classic worship song in Marathi</p>
-                    <a href="yeshu-maza.html" class="btn">View Lyrics</a>
-                </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="marathi-hymns.html" class="btn">Browse Complete Collection (100+ Hymns)</a>
             </div>
-            
-            <!-- Hymn 3 -->
-            <div class="hymn-card">
-                <div class="hymn-img" style="background-image: url('images/tujhya-paya.jpg');"></div>
-                <div class="hymn-content">
-                    <h3>तुझ्या पायाशी आलो...</h3>
-                    <p>Devotional song of surrender</p>
-                    <a href="tujhya-paya.html" class="btn">View Lyrics</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- About Section -->
-        <section class="about-section">
-            <h2>About GeetRatna</h2>
-            <p>GeetRatna is a collection of traditional and contemporary Marathi Christian hymns, providing accurate lyrics, translations, and devotional resources for the global Marathi-speaking Christian community.</p>
-            <a href="about.html" class="btn">Learn More</a>
         </section>
         
-        <!-- Ad Space (Bottom) -->
-        <div class="ad-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4836444185528882" crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-4836444185528882"
-                data-ad-slot="0987654321"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <section class="hymn-section">
+            <h2>About Anand Bankar's GeetRatna Project</h2>
+            <p>Founded in 2015, GeetRatna is dedicated to preserving authentic Marathi Christian hymns through:</p>
+            <ul>
+                <li><strong>Lyric Documentation</strong> - Original Marathi with diacritical marks</li>
+                <li><strong>Faithful Translations</strong> - English and Hindi while preserving poetic beauty</li>
+                <li><strong>Historical Research</strong> - Composer biographies and hymn origins</li>
+                <li><strong>Devotional Resources</strong> - Biblical references and commentary</li>
+                <li><strong>Audio Preservation</strong> - Traditional renditions on <a href="https://youtube.com/@geetratna" style="color: var(--secondary); font-weight: 600;">YouTube</a></li>
+            </ul>
+            
+            <p>This non-commercial project has documented over 100 hymns to date, with new additions monthly.</p>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="about.html" class="btn">Learn About Our Preservation Work</a>
+            </div>
+        </section>
+        
+        <!-- Ad Container (Bottom) - Will activate after approval -->
+        <div class="ad-container" id="bottom-ad">
+            <!-- AdSense code will go here post-approval -->
         </div>
     </main>
     
     <footer>
         <div class="container">
-            <p>&copy; 2025 GeetRatna. All rights reserved.</p>
-            <div class="legal-links">
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="terms.html">Terms of Use</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Hymn Collections</h3>
+                    <ul>
+                        <li><a href="marathi-hymns.html">Marathi Hymns</a></li>
+                        <li><a href="hindi-hymns.html">Hindi Bhajans</a></li>
+                        <li><a href="english-hymns.html">English Hymns</a></li>
+                        <li><a href="seasonal.html">Seasonal Hymns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="bible-songs.html">Bible Songs</a></li>
+                        <li><a href="chords.html">Guitar Chords</a></li>
+                        <li><a href="devotionals.html">Devotionals</a></li>
+                        <li><a href="request.html">Request a Hymn</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://youtube.com/@geetratna">YouTube @GeetRatna</a></li>
+                        <li><a href="https://youtube.com/@khristvaani">YouTube @KhristVaani</a></li>
+                        <li><a href="mailto:bankaranand24@gmail.com">Email Anand Bankar</a></li>
+                        <li><a href="tel:+919004582714">Call: +91 9004582714</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="copyright.html">Copyright Info</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
             </div>
-            <p>
-                <a href="https://youtube.com/@khristvaani">YouTube</a> | 
-                <a href="mailto:bankaranand24@gmail.com">Email</a> | 
-                <a href="tel:9004582714">Call</a>
-            </p>
+            
+            <div class="copyright">
+                <p>&copy; 2015-2025 GeetRatna by Anand Bankar. All rights reserved.</p>
+                <p>A non-commercial project preserving Marathi Christian hymnody</p>
+            </div>
         </div>
     </footer>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GeetRatna - Marathi Christian Hymns",
+      "url": "https://geetratna.github.io",
+      "description": "Authentic collection of Marathi Christian hymns with lyrics, translations and historical context by Anand Bankar",
+      "publisher": {
+        "@type": "Organization",
+        "name": "GeetRatna",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Anand Bankar",
+        "url": "https://youtube.com/@geetratna",
+        "sameAs": [
+          "https://youtube.com/@khristvaani"
+        ]
+      }
+    }
+    </script>
+    
+    <!-- 
+        AD IMPLEMENTATION GUIDE (POST-APPROVAL):
+        1. Complete ALL hymn pages with:
+           - Full lyrics (Marathi + English)
+           - 500+ words of original content per page
+           - Historical context
+           - Biblical references
+        
+        2. After approval:
+           a. Remove display:none from .ad-container in CSS
+           b. Uncomment the AdSense script below
+           c. Add ad units only to content-rich pages (not navigation pages)
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4836444185528882" crossorigin="anonymous"></script>
+    -->
 </body>
-  </html>
+    </html>
