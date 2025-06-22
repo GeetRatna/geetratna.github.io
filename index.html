@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeetRatna | Authentic Marathi Christian Hymns with Lyrics | Anand Bankar</title>
-    <meta name="description" content="Complete collection of 100+ Marathi Christian hymns with original lyrics, English translations, historical context, and audio. Curated by Anand Bankar since 2015.">
-    <meta name="keywords" content="GeetRatna,Marathi Christian hymns,Anand Bankar,Marathi bhajans,येशू भजने,गीतरत्न,ख्रिस्ती भजने">
+    
+    <!-- Enhanced Meta Tags -->
+    <meta name="description" content="Complete collection of 100+ authentic Marathi Christian hymns (ख्रिस्ती भजने) with original lyrics, English translations, historical context, and audio recordings. Curated by Anand Bankar since 2015.">
+    <meta name="keywords" content="GeetRatna,Marathi Christian hymns,Anand Bankar,Marathi bhajans,येशू भजने,गीतरत्न,ख्रिस्ती भजने,Marathi worship songs,Christian lyrics in Marathi,Marathi Kristi bhajani">
+    <meta name="author" content="Anand Bankar">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="GeetRatna | Authentic Marathi Christian Hymns with Lyrics">
+    <meta property="og:description" content="Complete collection of 100+ Marathi Christian hymns with original lyrics, translations, and historical context">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://geetratna.github.io/">
+    <meta property="og:image" content="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj">
+    <meta property="og:site_name" content="GeetRatna">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GeetRatna | Authentic Marathi Christian Hymns with Lyrics">
+    <meta name="twitter:description" content="Complete collection of 100+ Marathi Christian hymns with original lyrics, translations, and historical context">
+    <meta name="twitter:image" content="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj">
     
     <!-- Indexing Control -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="googlebot" content="index, follow">
     
     <!-- Google Verification -->
@@ -20,6 +37,10 @@
     
     <!-- Canonical URL to prevent duplicate content -->
     <link rel="canonical" href="https://geetratna.github.io/" />
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap"></noscript>
     
     <style>
         :root {
@@ -235,6 +256,29 @@
             display: none; /* Will enable after approval */
         }
         
+        /* Accessibility improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        /* Performance optimizations */
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
+        
         @media (max-width: 768px) {
             nav li {
                 margin: 0 10px;
@@ -249,17 +293,20 @@
             }
         }
     </style>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj" alt="GeetRatna Logo" class="logo">
+            <img src="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s160-c-k-c0x00ffffff-no-rj" alt="GeetRatna Logo" class="logo" width="90" height="90">
             <h1>GeetRatna | गीतरत्न</h1>
             <p>Preserving Marathi Christian Hymnody Since 2015</p>
         </div>
     </header>
     
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="marathi-hymns.html">Marathi Hymns</a></li>
@@ -288,8 +335,8 @@
             <p>Curated collection of the most beloved Marathi Christian hymns with complete lyrics and background information.</p>
             
             <div class="hymn-grid">
-                <div class="hymn-card">
-                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example1/maxresdefault.jpg');"></div>
+                <article class="hymn-card">
+                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example1/maxresdefault.jpg');" role="img" aria-label="Traditional Marathi Christian hymn"></div>
                     <div class="hymn-content">
                         <h3>सोडीले तूज सर्व जगाने</h3>
                         <div class="hymn-meta">
@@ -297,10 +344,10 @@
                         </div>
                         <a href="sodile-tuz.html" class="btn">View Full Lyrics</a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="hymn-card">
-                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example2/maxresdefault.jpg');"></div>
+                <article class="hymn-card">
+                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example2/maxresdefault.jpg');" role="img" aria-label="Marathi worship song"></div>
                     <div class="hymn-content">
                         <h3>येशू माझा प्रभू आहे</h3>
                         <div class="hymn-meta">
@@ -308,10 +355,10 @@
                         </div>
                         <a href="yeshu-maza.html" class="btn">View Lyrics + Audio</a>
                     </div>
-                </div>
+                </article>
                 
-                <div class="hymn-card">
-                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example3/maxresdefault.jpg');"></div>
+                <article class="hymn-card">
+                    <div class="hymn-img" style="background-image: url('https://i.ytimg.com/vi/example3/maxresdefault.jpg');" role="img" aria-label="Devotional Marathi hymn"></div>
                     <div class="hymn-content">
                         <h3>तुझ्या पायाशी आलो</h3>
                         <div class="hymn-meta">
@@ -319,7 +366,7 @@
                         </div>
                         <a href="tujhya-paya.html" class="btn">Read Devotional Notes</a>
                     </div>
-                </div>
+                </article>
             </div>
             
             <div style="text-align: center; margin-top: 30px;">
@@ -451,6 +498,70 @@
         "item": "https://geetratna.github.io/marathi-hymns.html"
       }]
     }
+    </script>
+    
+    <!-- Additional Structured Data for Hymns -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "MusicRecording",
+            "name": "सोडीले तूज सर्व जगाने",
+            "description": "Traditional Marathi Christian hymn composed in 1923",
+            "url": "https://geetratna.github.io/sodile-tuz.html"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "MusicRecording",
+            "name": "येशू माझा प्रभू आहे",
+            "description": "Popular Marathi worship song with guitar chords",
+            "url": "https://geetratna.github.io/yeshu-maza.html"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "MusicRecording",
+            "name": "तुझ्या पायाशी आलो",
+            "description": "Devotional Marathi hymn with biblical references",
+            "url": "https://geetratna.github.io/tujhya-paya.html"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Lazy loading script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = [].slice.call(document.querySelectorAll("img[loading='lazy']"));
+            
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.add("loaded");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
     </script>
     
     <!-- 
