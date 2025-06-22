@@ -7,12 +7,19 @@
     <meta name="description" content="Complete collection of 100+ Marathi Christian hymns with original lyrics, English translations, historical context, and audio. Curated by Anand Bankar since 2015.">
     <meta name="keywords" content="GeetRatna,Marathi Christian hymns,Anand Bankar,Marathi bhajans,येशू भजने,गीतरत्न,ख्रिस्ती भजने">
     
+    <!-- Indexing Control -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
     <!-- Google Verification -->
     <meta name="google-adsense-account" content="ca-pub-4836444185528882">
     <meta name="google-site-verification" content="u4ZZuKr8I06OdyTRj1P7O5dE0OD_EygN2n1N006tVqc">
     
     <!-- Favicon -->
     <link rel="icon" href="https://yt3.googleusercontent.com/s2WhsqUUbRa1jh8S99_MR_l6fC68GqcL9LpSt-cwqrxzrLAd6R8gKVn2mOYXJ6JhJimWzW6X=s32-c-k-c0x00ffffff-no-rj" type="image/jpeg">
+    
+    <!-- Canonical URL to prevent duplicate content -->
+    <link rel="canonical" href="https://geetratna.github.io/" />
     
     <style>
         :root {
@@ -395,13 +402,18 @@
         </div>
     </footer>
     
-    <!-- Structured Data for SEO -->
+    <!-- Enhanced Structured Data for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "GeetRatna - Marathi Christian Hymns",
       "url": "https://geetratna.github.io",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://geetratna.github.io/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
       "description": "Authentic collection of Marathi Christian hymns with lyrics, translations and historical context by Anand Bankar",
       "publisher": {
         "@type": "Organization",
@@ -422,7 +434,33 @@
     }
     </script>
     
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://geetratna.github.io/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Marathi Hymns",
+        "item": "https://geetratna.github.io/marathi-hymns.html"
+      }]
+    }
+    </script>
+    
     <!-- 
+        ADDITIONAL STEPS TO ENSURE INDEXING:
+        1. Submit sitemap.xml to Google Search Console
+        2. Verify ownership in Google Search Console
+        3. Request indexing through Search Console
+        4. Ensure all pages have unique, high-quality content
+        5. Build some quality backlinks to the site
+        
         AD IMPLEMENTATION GUIDE (POST-APPROVAL):
         1. Complete ALL hymn pages with:
            - Full lyrics (Marathi + English)
